@@ -15,10 +15,10 @@
 
         var container = $(this);
 
-        /*$(function() {
-            if (settings.autoStart)
-                startChat(container, settings.dataJSON, settings.startMessageId, settings.delay)
-        });*/
+        // $(function() {
+        //   if(settings.autoStart)
+        //     startChat(container, settings.dataJSON, settings.startMessageId, settings.delay)
+        // });
 
         // on click of Start button
         $(document).on('click', settings.startButtonId, function() {
@@ -43,9 +43,9 @@
 
     function startChat(container, data, startId, delay) {
         // clear chat window
-        container.html("<div class='footer'>EasyChat <sup>Powered By BeleTpl</sup></div>");
+        container.html("");
         container.append("<ul class='chat-window'></ul>");
-        //<div class='wrapper'><div class='head-text'>Let vhat</div><div class='chat-box'><div class='desc-text'>Please fill out the form below to start chatting with the next available agent.</div><form action='#''><div class='field'><input type='text' placeholder='Your Name' required></div><div class='field'><input type='email' placeholder='Email Address' required></div><div class='field'><button type='submit' id='submitID'>Start Chat</button></div></form></div></div></div>
+
         // get the first message
         var message = findMessageInJsonById(data, startId);
 
