@@ -43,7 +43,7 @@
 
     function startChat(container, data, startId, delay) {
         // clear chat window
-        container.html("");
+        container.html("<div class='footer'>EasyChat <sup>Powered By RCERT</sup></div>");
         container.append("<ul class='chat-window'></ul>");
 
         // get the first message
