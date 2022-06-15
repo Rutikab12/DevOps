@@ -1,6 +1,6 @@
 /*--------Chat Container CSS-------------------*/
 
-.container {
+.flow {
     font-family: 'Open Sans', sans-serif;
     width: 350px;
     height: 400px;
@@ -14,31 +14,30 @@
 }
 
 @media only screen and (max-width:600px) {
-    .container {
+    .flow {
         font-family: 'Open Sans', sans-serif;
-        width: 97%;
+        width: 96%;
         height: 400px;
         overflow-y: hidden;
         overflow-x: hidden;
         position: relative;
         margin-top: 45%;
         border-radius: 15px;
+        left: 10px;
         background-color: #515365;
-    }
-    .input-form {
-        width: 90%;
-    }
-    .input-form .header {
-        width: 90%;
-    }
-    .input-form input {
-        width: 90%;
     }
     #btn-submit {
         width: 90%;
     }
     #btn-submit:hover {
         width: 90%;
+    }
+    .footer {
+        display: none;
+    }
+    .chat-popup {
+        left: 40px;
+        margin-right: 0;
     }
 }
 
@@ -47,6 +46,38 @@
 
 
 /*--------For Chat Icon-------------------------*/
+
+.chat-popup {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 180px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}
+
+.chat-popup h3 {
+    text-align: center;
+}
+
+.chat-popup input {
+    text-align: center;
+    padding: 8px;
+    border-radius: 15px;
+    width: 95%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#flowchat {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 80px;
+}
 
 .chat_icon {
     position: fixed;
@@ -91,7 +122,7 @@ ul.chat-window {
 }*/
 
 .footer {
-    width: 340px;
+    width: 350px;
     padding: 5px;
     position: fixed;
     text-align: center;
@@ -248,63 +279,6 @@ ul.chat-window>li.options>ul>li {
 
 
 /*-----------First Page Form for user info----------------------*/
-
-.input-form {
-    width: 350px;
-    height: 400px;
-    background-color: #515365;
-    overflow: hidden;
-    border-radius: 15px;
-    box-sizing: border-box;
-}
-
-.input-form .header {
-    background-color: #a445b2;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 0;
-    padding: 10px;
-}
-
-.input-form input {
-    border-radius: 15px;
-    padding: 10px;
-    width: 90%;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    border: none;
-    outline: none;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.form-footer {
-    width: 350px;
-    padding: 5px;
-    position: fixed;
-    text-align: center;
-    color: #fff;
-    background-color: #a445b2;
-    margin-top: 380px;
-}
-
-.input-form select {
-    border-radius: 15px;
-    padding: 10px;
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border: none;
-    outline: none;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.input-form option {
-    border-radius: 15px;
-}
 
 #btn-submit {
     background-color: #a445b2;
